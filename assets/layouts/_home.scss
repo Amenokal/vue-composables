@@ -1,0 +1,48 @@
+
+.home-layout {
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      height: 7rem;
+    }
+  }
+
+
+  .container {
+    width: 80%;
+
+    div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      cursor: pointer;
+      position: relative;
+      transition: .2s;
+      margin: 0 1rem;
+
+      &:hover {
+        animation: floating 1s infinite;
+
+        &::before {
+          height: 3rem;
+          bottom: 10%;
+          transform: scaleY(1.2) scaleX(1.05);
+        }
+      }
+    }
+
+    h3 {
+      margin: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# SEO
+
+## useSeo()
+
+```js
+<script/>
+```

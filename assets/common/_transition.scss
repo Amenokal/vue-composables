@@ -1,0 +1,70 @@
+/**
+ * ---------------
+ * PAGE TRANSITION
+ */
+
+.no-transition-enter-active,
+.no-transition-leave-active {
+  transition: .1s;
+}
+.not-transition-enter-from,
+.not-transition-leave-to  {
+  opacity: 0;
+}
+
+.up-enter-active,
+.up-leave-active {
+  transition: .5s ease-out;
+}
+.up-enter-from {
+  opacity: 0;
+  transform: translateY(-5%);
+}
+.up-leave-to {
+  opacity: 0;
+  transform: translateY(5%);
+}
+
+.down-enter-active,
+.down-leave-active {
+  transition: .5s ease-out;
+}
+
+.down-enter-from {
+  opacity: 0;
+  transform: translateY(5%);
+}
+.down-leave-to {
+  opacity: 0;
+  transform: translateY(-5%);
+}
+
+/**
+ * ----------------
+ * POPUP TRANSITION
+ */
+
+.popup-enter-active,
+.popup-leave-active {
+  transition: .2s ease-out;
+}
+.popup-enter-from,
+.popup-leave-to  {
+  opacity: 0;
+  transform: scale(.95);
+}
+
+/**
+ * ------------------
+ * TOASTER TRANSITION
+ */
+
+.toasts-enter-active,
+.toasts-leave-active {
+  transition: 0.5s ease;
+}
+.toasts-enter-from,
+.toasts-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
