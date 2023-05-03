@@ -1,17 +1,16 @@
 <template>
-  <main v-html="ghData"/>
+  <main v-html="data"/>
 </template>
 
 <script setup>
 import axios from 'axios'
 import showdown from 'showdown'
 
-const ghData = ref('')
+const data = ref('')
 
 onMounted(async () => {  
   const res = await axios.get('https://raw.githubusercontent.com/Amenokal/vue-composables/main/documentation/seo.md')
   const converter = new showdown.Converter()
-  ghData.value = converter.makeHtml(res.data)
-  console.log(ghData.value)
+  data.value = converter.makeHtml(res.data)
 })
 </script>
