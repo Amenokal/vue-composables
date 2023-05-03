@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <main>
     <h2>Démo</h2>
     <button @click="openPopup('Popup1')">Popup 1</button>
     <button @click="handleOpenPopup2">Popup 2</button>
-  </div>
-  
-  <main v-html="data"/>
+
+    <div v-html="data"/>
+  </main>
 </template>
 
 <script setup>
@@ -16,7 +16,7 @@ const converter = new showdown.Converter()
 const data = ref('')
 
 onMounted(async () => {  
-  const res = await axios.get('https://raw.githubusercontent.com/Amenokal/vue-composables/main/documentation/toaster.md')
+  const res = await axios.get('https://raw.githubusercontent.com/Amenokal/vue-composables/main/documentation/popup.md')
   data.value = converter.makeHtml(res.data)
 })
 

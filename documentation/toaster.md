@@ -1,3 +1,3 @@
 # TOASTER
 
-## useToast
+## useToast()

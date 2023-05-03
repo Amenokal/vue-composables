@@ -1,12 +1,11 @@
 <template>
-  <div>
+  <main>
     <h2>Démo</h2>
-
     <button @click="newToast('validation', { message: 'Succès !'})">Nouveau toast "validation"</button>
     <button @click="newToast('warning', { message: 'Oups...'})">Nouveau toast "warning"</button>
-  </div>
 
-  <main v-html="data"/>
+    <div v-html="data"/>
+  </main>
 </template>
 
 <script setup>

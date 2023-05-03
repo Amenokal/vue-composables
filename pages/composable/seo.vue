@@ -1,5 +1,7 @@
 <template>
-  <main v-html="data"/>
+  <main>
+    <div v-html="data"/>
+  </main>
 </template>
 
 <script setup>
