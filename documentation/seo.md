@@ -3,5 +3,5 @@
 ## useSeo()
 
 ```js
-<script/>
+yarn add axios
 ```
